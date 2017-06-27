@@ -14,14 +14,6 @@
 	<div class="header-content">
 		<h1><a href="#home">Forest</a></h1>
 
-<!-- 		<button type="button" class="nav-toggler" aria-expanded="false" title="Otwórz/zamknij menu">
-			<span class="nav-toggler__icon" aria-hidden="true"></span>
-			<span class="visuallyhidden">Otwórz/zamknij menu</span>
-		</button>
-		<button type="button" aria-label="close" class="closes">
-			<span class="close__nav">&times;</span>
-			<span class="visuallyhidden">Zamknij menu</span>
-		</button> -->
 		<div class="trigger">
 			<span></span>
 			<span></span>
@@ -279,38 +271,6 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">	
-// ( function() {
-// 	var button = document.querySelector( '.nav-toggler' );
-	
-
-// 	var close = document.querySelector( '.closes' );
-	
-// 	button.addEventListener( 'click', function( evt ) {
-// 		var nav = document.querySelector( '.mobile-menu' );
-		
-// 		nav.classList.toggle( 'nav_open' );
-
-// 		button.setAttribute( 'aria-expanded', String( nav.classList.contains( 'nav_open' ) ) );
-// 	}, false );
-
-// 	button.addEventListener('click', function( evt) {
-
-// 		var nav = document.querySelector( '.mobile-menu' );
-		
-// 		close.classList.toggle( 'close-toggler' );
-
-
-
-// 		button.setAttribute( 'aria-expanded', String( close.classList.contains( 'close-toggler' ) ) );
-
-// 	}, false );
-
-
-
-
-
-
-// }() );
 
 $('.trigger').on('click', function() {
 	$(this).toggleClass('on');
@@ -328,11 +288,7 @@ $('.trigger').on('click', function() {
 <script>
 ( function( $ ) {
 	'use strict';
-	// Można sprawdzić, czy scroll-behavior jest obsługiwane i jedynie wówczas dopinać skrypt
-	// if ( ! ( 'scroll-behavior' in getComputedStyle( document.documentElement ) ) ) {
-		// return;
-	// }
-	//$( '.scrollTo' ).on( 'click', function(e) //do każdego a dodajemy class="scrollTo"
+
 	$( 'a[href^="#"]' ).on( 'click', function(e) {
 		e.preventDefault();
 		var href = $( this ).attr( 'href' );
